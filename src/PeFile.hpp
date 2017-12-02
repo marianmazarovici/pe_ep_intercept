@@ -26,7 +26,6 @@ namespace PeEpIntercept {
         static const uint32_t characteristics = scn_code | scn_mem_exe | scn_mem_read | scn_mem_write;
 
         explicit PeFile(std::string path);
-
     public:
         bool HasSection(const std::string &section_name);
 
