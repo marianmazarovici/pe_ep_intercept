@@ -8,7 +8,9 @@ namespace PeEpIntercept {
         file_input.open(path, std::ios::binary |
                               std::ifstream::ate |
                               std::fstream::in |
-                              std::fstream::out);
+                              std::fstream::out
+        );
+
         std::streamsize size = file_input.tellg();
         file_input.seekg(0, std::ios::beg);
 
