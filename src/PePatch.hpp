@@ -6,6 +6,7 @@
 namespace PeEpIntercept {
     class PePatch : public PeFile {
     protected:
+        SectionHeader new_section_header;
     public:
         std::vector<char> Assemble(const std::string &assembly);
         explicit PePatch(std::string &path);
