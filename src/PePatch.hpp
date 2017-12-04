@@ -6,9 +6,7 @@
 namespace PeEpIntercept {
     class PePatch : public PeFile {
     protected:
-        SectionHeader new_section_header;
     public:
-        std::vector<char> Assemble(const std::string &assembly);
         explicit PePatch(std::string &path);
         virtual void AddSection(const std::string &name, uint32_t code_size) = 0;
         virtual void SaveFile(std::string new_path, std::vector<char> code_buffer) = 0;
