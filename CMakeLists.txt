@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.6)
+cmake_minimum_required(VERSION 3.9)
 project(pe_ep_intercept)
 
 set(KEYSTONE_BUILD_STATIC_RUNTIME on)
